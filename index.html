@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Travel Agency</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body style="font-family: 'Quicksand', sans-serif;">
+
+  <nav class="navbar navbar-expand-lg bg-primary border-bottom shadow mb-4">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold text-white" href="#">
+        <i class="bi bi-brightness-high"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16">
+          <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+        </svg>
+        Travel Agency
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav fw-semibold">
+          <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Destinations</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Packages</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Special Offers</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-4">
+    <div class="row mb-4 g-3">
+      <div class="col-12 col-md-8">
+        <div class="card shadow-lg border-0 bg-light animate__animated animate__fadeIn">
+          <img src="https://picsum.photos/700/300?random=1" class="card-img-top" alt="Main Holiday Destination">
+          <div class="card-body">
+            <h5 class="card-title text-primary fw-bold">Explore Bali</h5>
+            <p class="card-text">Beaches, culture, and breathtaking landscapes in Bali.</p>
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#packageModal">
+              View Package
+            </button>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 d-none d-md-block">
+        <ul class="list-group shadow">
+          <li class="list-group-item bg-info text-white"><a href="#" class="text-white text-decoration-none">Paris</a></li>
+          <li class="list-group-item bg-danger text-white"><a href="#" class="text-white text-decoration-none">Swiss Alps</a></li>
+          <li class="list-group-item bg-success text-white"><a href="#" class="text-white text-decoration-none">Maldives</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row mb-4 g-3">
+      <div class="col-sm">
+        <div class="card h-100 border-0 bg-light shadow-sm">
+          <img src="https://picsum.photos/150?random=2" class="card-img-top" alt="London">
+          <div class="card-body text-center">
+            <h6 class="card-title">London</h6>
+            <p class="card-text">London Eye, Madame Tussauds, and Tower Bridge</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="card h-100 border-0 bg-light shadow-sm">
+          <img src="https://picsum.photos/150?random=3" class="card-img-top" alt="Madrid">
+          <div class="card-body text-center">
+            <h6 class="card-title">Madrid</h6>
+            <p class="card-text">Puerta del Sol, Museo del Prado, Santiago Bernabéu Stadium</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="card h-100 border-0 bg-light shadow-sm">
+          <img src="https://picsum.photos/150?random=4" class="card-img-top" alt="Egypt">
+          <div class="card-body text-center">
+            <h6 class="card-title">Egypt</h6>
+            <p class="card-text">Pyramids of Giza, Nile River.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mb-4 g-3">
+      <div class="col-12 col-md-4">
+        <div class="card h-100 bg-warning-subtle border-0 shadow-sm">
+          <div class="card-body">
+            <h6 class="card-title">Deals</h6>
+            <p class="card-text">Save on holiday packages.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="card h-100 bg-light border-start border-5 border-info-subtle shadow-sm">
+          <div class="card-body">
+            <h6 class="card-title">Last-Minute Getaways</h6>
+            <p class="card-text">Last-minute deals on dream destinations.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="card h-100 bg-danger-subtle border-0 shadow-sm">
+          <div class="card-body">
+            <h6 class="card-title">Luxury Packages</h6>
+            <p class="card-text">All-inclusive luxury experiences</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="packageModal" tabindex="-1" aria-labelledby="packageModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="packageModalLabel">Bali Package</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          7-day stay in Bali.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">
+      <a href="https://bali.com" class="text-white text-decoration-none" target="_blank">Visit Bali - Press here</a>
+    </p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
