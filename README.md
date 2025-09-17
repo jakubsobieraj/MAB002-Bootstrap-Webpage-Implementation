@@ -1,2 +1,2 @@
-# jakubsobieraj.github.io
-MAB002: Bootstrap Webpage Implementation
+# MAB002: Bootstrap Webpage Implementation
+
